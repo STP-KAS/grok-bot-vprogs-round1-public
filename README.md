@@ -1,3 +1,7 @@
+> **Experimental only. Not a product.**
+>
+> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
+
 # TN10 full-load stress & break test + vprogs (25 Sep 2026)
 
 > Clean public copy (history squashed) of a private working repo.
@@ -126,7 +130,7 @@ Each is a stand-alone bug report (repro, versions, log excerpt, severity, sugges
 | [F5](findings/F5-rpc-async-threads-default.md) | RPC ingest throttled by `--async-threads`; gRPC client cap | Medium (config) |
 | [F6](findings/F6-websocket-orphans-under-load.md) | WebSocket drops and orphan rejections under load | Low–Medium |
 | [F7](findings/F7-vprogs-runtime-needs-utxoindex.md) | vprogs TN10 runtime panics without `--utxoindex`; vprog-under-load test skipped | Medium |
-| [D1](findings/D1-desk-note-checks.md) | Desk-note re-checks: settlement frozen (~85 min lag), issue-126 guard unapplied, version-stamp trap, silverc edges, bridge bugs (not re-tested) | info |
+| [D1](findings/D1-desk-note-checks.md) | Desk-note re-checks: settlement frozen (64,057 DAA gap; ~85 min at a sampled 12.5 DAA/s, ≈107 min at the 10 BPS target), issue-126 guard unapplied, version-stamp trap, silverc edges, bridge bugs (not re-tested) | info |
 
 Other observations (not full reports): edge-case txs behaved as designed (`logs/C2–C7`): dust and 1,000,000-sompi outputs rejected by
 storage mass, 5,000,000 accepted; fee floor below 1,000,000 sompi rejected for that tx; 240 KB payload rejected at 0 fee, accepted at
@@ -285,6 +289,6 @@ Round 2 ran from **22:47:26 CEST 25 Sep** to **06:31:10 CEST 26 Sep** (~7 h 44 m
 ## Round 3 (26 Sep 2026)
 vprogs under a TN10 storm: our own vprog on vprogs master and tic-tac-toe, plus the n0 `--utxoindex` restart. See [STP-KAS/grok-bot-vprogs-round3](https://github.com/STP-KAS/grok-bot-vprogs-round3).
 
-## Round 4 interim
+## Round 4 and later
 
-The interim round-4 report is [here](https://github.com/STP-KAS/grok-bot-vprogs-round4). Final numbers will be added after the 15:32 CEST paced run.
+The **final** round-4 report (data up to 09:20 CEST 26 Sep) is [here](https://github.com/STP-KAS/grok-bot-vprogs-round4). Later rounds: [5](https://github.com/STP-KAS/grok-bot-vprogs-round5) · [6](https://github.com/STP-KAS/grok-bot-vprogs-round6) · [7](https://github.com/STP-KAS/tn10-vprogs-round7-ideas) · [8](https://github.com/STP-KAS/tn10-vprogs-round8-covenants). Summary of all rounds: [tn10-vprogs-stress-findings](https://github.com/STP-KAS/tn10-vprogs-stress-findings).
