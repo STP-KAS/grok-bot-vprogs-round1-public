@@ -2,6 +2,8 @@
 
 Status: **interim summary, 25 Sep 2026, 22:55 CEST.** The storm is still running at full throttle until funds or disk run out. The final version (with the clean recovery measurement) will be `overload-final-summary.md`. TESTNET-10 ONLY.
 
+> **Update 26 Sep 2026:** no `overload-final-summary.md` was written. The final full-run write-up (with the recovery attempt) is [grok-bot-vprogs-round2](https://github.com/STP-KAS/grok-bot-vprogs-round2).
+
 ## What we did
 - **Overload window:** 21:48:41 → 22:46:14 CEST, **57.5 minutes of continuous full-throttle storm** on kaspad n0, a local TN10 node with `--ram-scale=0.1`, so its mempool hard cap is about 100k txs. The storm had 8 P2SH workers plus a 0.5-TKAS lane, all paying 1.2× the minimum feerate (120 sompi/gram).
 - **Probes:** every 30 s, one small self-transfer (mass 1690) per fee tier: 1×, 1.2×, 2×, 5×, 10× and 100× the node's minimum relay feerate. **That minimum is 100 sompi/gram on this node**; 10 sompi/gram was rejected as "not standard". Inclusion time = submit until the txid appears in the virtual chain's accepted txs, polled every 1 s. Wallets: throwaway storm keys 400–799, not used by the storm. Script: `scripts/overload-probe.mjs`; data: `logs/overload/probes.jsonl`.

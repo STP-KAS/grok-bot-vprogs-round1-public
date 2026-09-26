@@ -172,7 +172,7 @@ Vprog moves under load were **skipped** (F7).
 See [vprogs/README.md](vprogs/README.md). Summary:
 - **tn10-runtime-under-storm** (upstream `kaspanet/vprogs` release-candidate `3a61c0ba608b`): **not completed** — panicked, node lacks `--utxoindex` (F7).
 - **tic-tac-toe campaign** (Max's hosted vprog): the `campaign/` runner on `main` ran; last status I read (21:45:58): 1,220 sends, 10,349 send failures,
-  **0 finished games, 1,534 game failures**. The hosted lane's settlement was frozen (~85 min behind). Still running until 08:57 on 26 Sep, so numbers are interim.
+  **0 finished games, 1,534 game failures**. The hosted lane's settlement was frozen (~85 min behind). It was scheduled to run until 08:57 on 26 Sep; the runner pushed no status after 21:45:58, so these are the last recorded numbers.
 - **DeskFloor** (our own SilverScript v1.0.0 L1 covenant): **completed**; on-chain accept/reject matches expectations for all 7 cases.
 - We did **not** build a new vprogs guest (ZK program) this session; the RISC Zero settler build had already failed on the Windows desk (desk note). Honest gap.
 
