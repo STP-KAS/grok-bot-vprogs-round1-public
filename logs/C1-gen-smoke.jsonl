@@ -1,0 +1,4 @@
+{"t":"2026-09-25T18:16:02.929Z","step":"split","wallet":"W1","node":"n1","txid":"731bff8d6e0a954446c838e136cfaad10a878acc7fdac4fcc0fafb65e4a3d735","lanes":20,"perSompi":"7495000000","mass":"12753","fee":"986400"}
+{"t":"2026-09-25T18:16:12.938Z","step":"spray","wallet":"W1","node":"n1","elapsed_s":10,"ok":50,"err":0,"tps_window":5,"lat_p50":1,"lat_p99":14,"live_lanes":20,"errs":{}}
+{"t":"2026-09-25T18:16:22.939Z","step":"spray","wallet":"W1","node":"n1","elapsed_s":20,"ok":101,"err":0,"tps_window":5.1,"lat_p50":1,"lat_p99":12,"live_lanes":20,"errs":{}}
+{"t":"2026-09-25T18:16:32.934Z","step":"done","wallet":"W1","node":"n1","ok":150,"err":0,"errs":{},"secs":30}

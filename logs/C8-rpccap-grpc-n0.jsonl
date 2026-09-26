@@ -1,0 +1,59 @@
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 1, "ok": true, "ms": 15, "mempool": 51}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 2, "ok": true, "ms": 12, "mempool": 51}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 3, "ok": true, "ms": 19, "mempool": 51}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 10, "ok": true, "ms": 14, "mempool": 43}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 20, "ok": true, "ms": 9, "mempool": 43}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 30, "ok": true, "ms": 5, "mempool": 43}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 40, "ok": true, "ms": 7, "mempool": 43}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 50, "ok": true, "ms": 13, "mempool": 43}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 57, "ok": false, "ms": 5, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 58, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 59, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 60, "ok": false, "ms": 5, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 61, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 62, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 63, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 64, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 65, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 66, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 67, "ok": false, "ms": 9, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 68, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 69, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 70, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 71, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 72, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 73, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 74, "ok": false, "ms": 8, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 75, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 76, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 77, "ok": false, "ms": 5, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 78, "ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 79, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 80, "ok": false, "ms": 6, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 81, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 82, "ok": false, "ms": 7, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 83, "ok": false, "ms": 6, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 84, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 85, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 86, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 87, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 88, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 89, "ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 90, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 91, "ok": false, "ms": 9, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 92, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 93, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 94, "ok": false, "ms": 5, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 95, "ok": false, "ms": 9, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 96, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:08+0200", "phase": "open", "i": 97, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:09+0200", "phase": "open", "i": 98, "ok": false, "ms": 16, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:09+0200", "phase": "open", "i": 99, "ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:09+0200", "phase": "open", "i": 100, "ok": false, "ms": 4, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}
+{"t": "2026-09-25T20:47:09+0200", "phase": "opened", "n": 100, "ok": 56, "failed": 44}
+{"t": "2026-09-25T20:47:19+0200", "phase": "hold", "held_alive": 56, "fresh_probe": {"ok": false, "ms": 1, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}}
+{"t": "2026-09-25T20:47:29+0200", "phase": "hold", "held_alive": 56, "fresh_probe": {"ok": false, "ms": 3, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}}
+{"t": "2026-09-25T20:47:39+0200", "phase": "hold", "held_alive": 56, "fresh_probe": {"ok": false, "ms": 2, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}}
+{"t": "2026-09-25T20:47:49+0200", "phase": "hold", "held_alive": 56, "fresh_probe": {"ok": false, "ms": 8, "code": "StatusCode.RESOURCE_EXHAUSTED", "detail": "The gRPC service has reached full capacity and accepts no new connection"}}
+{"t": "2026-09-25T20:47:49+0200", "phase": "released", "n": 100}
+{"t": "2026-09-25T20:47:49+0200", "phase": "recovered", "after_s": 0.0, "ok": true, "ms": 9, "mempool": 0}

@@ -1,0 +1,9 @@
+pragma silverscript ^0.1.0;
+
+// Desk example of the L1 pillar. A covenant that refuses a number under a floor.
+// It does not touch the vprogs lane.
+contract DeskFloor(int floor) {
+    entry check(int n) {
+        require(n >= floor);
+    }
+}

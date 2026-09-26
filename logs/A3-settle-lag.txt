@@ -1,0 +1,13 @@
+2026-09-25T20:12:29+02:00
+{
+  "takenAt": "2026-09-25T18:12:37.938Z",
+  "l2Tip": 545218,
+  "tipMoved": 57,
+  "settledTx": "0d9719c4d5dce33232966f80a8060e25abfa4198294f3d73315776c26ba88a45",
+  "settlementMoved": false,
+  "settledDaa": 580229488,
+  "virtualDaa": 580293545,
+  "daaPerSecond": 12.5,
+  "gapDaa": 64057,
+  "lagMinutes": 85.4
+}

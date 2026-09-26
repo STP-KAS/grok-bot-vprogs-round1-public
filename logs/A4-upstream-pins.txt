@@ -1,0 +1,62 @@
+2026-09-25T20:12:44+02:00
+== kaspanet/vprogs/commits/master
+f9b84a863a7c 2026-07-28T11:24:41Z vprogs-runner: program-agnostic daemon engine + vprun CLI, and a live account-model example (#97)
+== kaspanet/vprogs/commits/release-candidate
+3a61c0ba608b 2026-09-24T12:06:43Z aggregate-prover: review fixes for the unmapped-boundary fallback
+== biryukovmaxim/vprog-tictactoe/commits/master
+ba05d924e1e5 2026-09-24T12:18:02Z pin vprogs fix/reorg-boundary-duplicate-bundles 3a61c0b
+== kaspanet/silverscript/commits/master
+3ed973335b59 2026-09-09T16:47:25Z Prepare SilverScript 1.0 and clarify ABI artifact validation (#248)
+== silverscript tag v1.0.0
+3ed973335b59269293564805cc2c58a14595ec03 commit
+v1.0.0 2026-09-09T16:48:31Z
+v1-rc1 2026-08-30T12:05:43Z
+== vprogs PR 164
+open draft=true head=3a61c0ba608b updated=2026-09-24T12:07:11Z settler: skip state-neutral duplicates; aggregate-prover: compact reorg-unmapped boundaries
+== vprogs issue 126
+open 2026-07-28T13:07:12Z A reorg at the canonical chain's base rolls the tip below the live floor and orphans committed state
+== vprogs issue 125
+open 2026-07-23T15:44:18Z l1/wallet: a zero-valued caller-supplied output panics in the storage-mass calculation
+== vprogs open PRs
+#164 open draft=true 2026-09-24T12:07:11Z settler: skip state-neutral duplicates; aggregate-prover: compact reorg-unmapped boundaries
+#163 open draft=true 2026-09-23T12:54:50Z zk: reject transactions that write Read-declared resources
+#160 open draft=true 2026-09-23T11:37:16Z scheduler: resolve restored read-only state through the predecessor chain
+#161 open draft=true 2026-09-23T11:35:22Z canonical-chain: cap the restored tip at the persisted committed tip
+#158 open draft=true 2026-09-23T09:56:32Z storage: canonical reads below the restore base and after a rollback to genesis
+#157 open draft=true 2026-09-22T16:41:23Z bridge: finalize below the header-cited pruning point after a confirmation window
+#156 open draft=true 2026-09-22T13:00:36Z zk: reject malformed carrier input instead of panicking the guest
+#152 open draft=true 2026-09-22T12:58:14Z storage, zk: reorg-safe store restore + deferred dead lane proofs
+#154 open draft=true 2026-09-22T10:53:18Z settler, aggregate-prover: resume unsettled bundles after a restart
+#153 open draft=true 2026-09-22T10:53:17Z aggregate-prover: cancel the lane-proof fetch on shutdown
+== kccs
+c0bb8f3babbb 2026-09-21T13:31:53Z Change status from Last Call to Final (#25)
+== vprogs releases
+0
+== kccs tree
+LICENSE.md
+README.md
+kcc-0000.md
+kcc-0001.md
+kcc-0002.md
+kcc-0002
+kcc-0020.md
+kcc-0020
+kcc-template.md
+kcc-0000.md modified
+Change status from Last Call to Final for KCC0 merged=2026-09-21T13:31:53Z
+== kcc-0020 header
+```
+KCC: 20
+Category: Application, Covenant
+Title: Fungible Token Covenant Specification
+Authors: Sivan Helfer, Michael Sutton, Romain Billot
+Comments-URI: https://kas-smiths.org/t/fungible-token-covenant-specification-kcc20/8/
+Status: Draft
+Created: 2026-07-15
+Updated: 2026-08-25
+```
+
+# Fungible Token Covenant Specification
+
+KCC20 specifies a convention for fungible-token covenants. It standardizes the
+[token state](#1-state), [transfer interface](#2-transfer-interface),

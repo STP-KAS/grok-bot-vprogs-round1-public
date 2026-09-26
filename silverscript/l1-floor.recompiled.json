@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "compiler_version": "0.1.0",
+  "structs": {},
+  "contracts": {
+    "DeskFloor": {
+      "source_path": "sil/DeskFloor.sil",
+      "runtime_state": {
+        "source": "State",
+        "fields": []
+      },
+      "entries": {
+        "check": {
+          "dispatch_tag": "b0823999",
+          "params": [
+            {
+              "name": "n",
+              "type": {
+                "kind": "int"
+              }
+            }
+          ]
+        }
+      },
+      "compiled": {
+        "bytecode": [118, 4, 176, 130, 57, 153, 135, 99, 117, 118, 130, 89, 159, 105, 117, 118, 81, 162, 105, 117, 81, 103, 106, 104],
+        "template_hash": [32, 239, 103, 200, 174, 4, 139, 220, 101, 11, 189, 187, 247, 20, 216, 195, 232, 117, 196, 233, 18, 208, 32, 240, 126, 33, 249, 255, 93, 135, 124, 152],
+        "state_span": {
+          "offset": 0,
+          "len": 0
+        }
+      }
+    }
+  }
+}

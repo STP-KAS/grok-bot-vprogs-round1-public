@@ -1,0 +1,16 @@
+2026-09-25T20:49:22+02:00 pid=2649252 cmd: /workspace/artifacts/kaspa-tn10/bin/kaspad --testnet --netsuffix=10 --appdir=/tmp/kaspa-data-tn10-n0 --logdir=/tmp/kaspa-logs-tn10-n0 --listen=0.0.0.0:16211 --rpclisten=127.0.0.1:16210 --rpclisten-borsh=127.0.0.1:17210 --rpclisten-json=127.0.0.1:18210 --ram-scale=0.1 --async-threads=1 --outpeers=6 --maxinpeers=24 --rpcmaxclients=64 --disable-upnp --addpeer=127.0.0.1:16221
+2026-09-25T20:49:22+02:00 SIGINT sent
+2026-09-25T20:49:24+02:00 exited after 2.533 s
+2026-09-25T20:49:24+02:00 started new pid=3835316 (pid file updated)
+2026-09-25T20:49:26+02:00 RPC up after 1.177s (synced=1 sink_age=4.1 daa=580313924)
+2026-09-25T20:49:26+02:00 isSynced after 1.177s (sink_age=4.1)
+2026-09-25T20:49:26+02:00 at tip (sink_age<5s) after 1.177s, daa=580313924
+2026-09-25T20:49:26+02:00 summary: shutdown_s=2.533 rpc_up_s=1.177 synced_s=1.177 tip_s=1.177
+2026-09-25T21:10:52+02:00 pid=3835316 cmd: /workspace/artifacts/kaspa-tn10/bin/kaspad --testnet --netsuffix=10 --appdir=/tmp/kaspa-data-tn10-n0 --logdir=/tmp/kaspa-logs-tn10-n0 --listen=0.0.0.0:16211 --rpclisten=127.0.0.1:16210 --rpclisten-borsh=127.0.0.1:17210 --rpclisten-json=127.0.0.1:18210 --ram-scale=0.1 --async-threads=1 --outpeers=6 --maxinpeers=24 --rpcmaxclients=64 --disable-upnp --addpeer=127.0.0.1:16221
+2026-09-25T21:10:52+02:00 SIGINT sent
+2026-09-25T21:10:54+02:00 exited after 1.530 s
+2026-09-25T21:10:54+02:00 started new pid=3945235 (pid file updated)
+2026-09-25T21:10:55+02:00 RPC up after 1.117s (synced=1 sink_age=2.8 daa=580325697)
+2026-09-25T21:10:55+02:00 isSynced after 1.117s (sink_age=2.8)
+2026-09-25T21:10:55+02:00 at tip (sink_age<5s) after 1.117s, daa=580325697
+2026-09-25T21:10:55+02:00 summary: shutdown_s=1.530 rpc_up_s=1.117 synced_s=1.117 tip_s=1.117

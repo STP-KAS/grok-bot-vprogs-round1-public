@@ -1,0 +1,41 @@
+2026-09-25T20:54:28+02:00 storm A,B started conc=8
+2026-09-25T20:55:15+02:00 HALT A,B (found 25 tx/block storage-mass cap with 1-in-2-out 0.5 TKAS)
+2026-09-25T20:56:07+02:00 storm v3 A,B,C,D started (800 wallets), conc=2 per process
+2026-09-25T20:56:18+02:00 conc_per_process=2 (x4 processes)
+2026-09-25T20:59:05+02:00 switch: 0.5-TKAS lane = storm3 A,B (wallets 0-399, conc 2/proc); TPS lane = tps.mjs C1,C2,D1,D2 (wallets 400-799, 1-in-1-out, FEE_MULT 1.5, conc 16/proc). n1 mempool at ~100k = full (rejects: 'full with transactions with higher priority')
+2026-09-25T21:00:55+02:00 HALT storm3 A,B to measure n1 backlog drain (n1 mempool ~100k = ram-scale 0.1 cap; RPC-submitted txs are Priority::High and never evicted)
+2026-09-25T21:00:55+02:00 tps lane restarted from API-recovered UTXOs, PREF=n0 COOL=3s FEE_MULT=1.5 conc 16
+2026-09-25T21:02:19+02:00 tps lane v2: 8 procs T0-T7 (50 wallets each) + desk coinbase UTXOs 31201..271201 (30k/proc) as independent 1-in-1-out inputs, conc 24/proc, PREF=n0
+2026-09-25T21:03:39+02:00 tps conc 48/proc (8 procs)
+2026-09-25T21:04:46+02:00 tps lane v3: 8 procs from 206,768 lane UTXOs (desk-fed), PREF=any AFFINITY=0 (both n0+n1 wRPC), conc 32/proc
+2026-09-25T21:06:43+02:00 tps lane v4: P2SH(OP_TRUE) mode (spend mass 571 vs 1624), 8 procs conc 32, both nodes
+2026-09-25T21:09:34+02:00 tps conc 64/proc (P2SH mode)
+2026-09-25T21:10:50+02:00 HALT tps; restart n0 with --async-threads=4 (RPC ingest bottleneck: n0/n1 run --async-threads=1)
+2026-09-25T21:11:06+02:00 restart n1 with --async-threads=4 (n1 mempool before: 58035)
+2026-09-25T21:12:29+02:00 tps restarted (P2SH, conc 64, both nodes async-threads=4)
+2026-09-25T21:13:26+02:00 miners stopped per user (keepalive HALT + killed 1 bin-x4 miners; knsbot miner untouched). Explorer showed >3000 TPS at ~21:10 CEST.
+2026-09-25T21:14:00+02:00 keepalive restarted as scripts/keepalive-storm-2.sh (PER_NODE=1 TARGET=2, bin-x4, -t 1, nice 19) per user correction
+2026-09-25T21:15:05+02:00 n0 CRASHED 21:12:50 (mempool assert panic validate_and_insert_transaction.rs:123, 100001>100000); restarted manually pid 3992791 async-threads=4
+2026-09-25T21:27:09+02:00 12h supervisor (re)started pid 4051115: per-node gate 85k/70k, backlog target 50-70k, drain-estimating rate control, worker auto-reconnect
+2026-09-25T21:32:51+02:00 USER APPROVED n1 wipe: HALT storm, stop n1, rm /tmp/kaspa-data-tn10-n1, run 12h n0-only
+2026-09-25T21:33:18+02:00 n1 (pid 3979420) stopped by SIGINT in ~4s; /tmp/kaspa-data-tn10-n1 removed; free disk now 54G
+2026-09-25T21:34:42+0200 12h storm restarted n0-only (STORM_NODES=n0), 2 miners on n0 (keepalive-storm-2.sh PER_NODE=2 NODES=(0)). Disk projection: 54G free, floor 8.4G, ~320 B/tx on one node -> 12h budget cap ~3540 TPS; 3000 TPS x 12h = ~38.6 GB. KNS bot miner pid 2648340/3983245 was on n1:16220 and lost its node (not touched).
+2026-09-25T21:36:02+02:00 scratch freed: /tmp/kminer-build, /tmp/*desk-utxos*.json, /tmp/kaspa-data-tn10-n2 (n2 not running)
+2026-09-25T21:36:33+02:00 FULL THROTTLE per user: supervisor pid 4099471, n0 only, RMAX 30000 tx/s, mempool taper 60k->80k + gate 85k/70k, disk taper 9.5->8.4G, no 12h rationing
+2026-09-25T21:45:18+0200 PHASE1-START full-throttle overload 30min (limits file absent => RMAX=30000, FULL=1 taper 45k-68k, gate 78k/55k); probes overload-probe.mjs tiers 1,2,5,10,100,1000x min feerate every 30s
+2026-09-25T21:46:47+0200 PHASE1-RESTART probes re-seeded from public API (old state UTXOs were spent); 30min P1 window counts from here
+2026-09-25T21:47:09+0200 PHASE1-START(clean) single probe pid 4142122 ; P1 30min window starts now
+2026-09-25T21:48:41+0200 PHASE1-START(final) probe pid 4146646 tiers 1,1.2,2,5,10,100 x MINRATE 100 sompi/g (storm pays 1.2x=120). P1 30min window starts now
+2026-09-25T22:11:32+0200 NOTE plan: P1 overload extended to 23:00; budget ok (~666k TKAS in pools, ~13 TKAS/min burn)
+2026-09-25T22:16:25+0200 SCALEUP-1 /tmp/tps-storm.limits='40000 60000 72000 60000' (RATE_MAX 30000->60000; format LOW HIGH PANIC RATE_MAX; FULL taper 45k-68k + gate 78k/55k unchanged). before: net_tps 6.1-7.7k, block compute mass ~491k/500k (98%), mempool 66k, fees 9143 TKAS cum
+2026-09-25T22:19:50+0200 MARK P1 first 30min done (21:48:41-22:18:41): net 6289 TPS avg, mp max 99967, fee 2402 TKAS/10min; interim written findings/overload-interim-2215.md
+2026-09-25T22:31:05+0200 ADDRESSES before=4800 (4000 P2SH tag wallets P0-P7 + 400 storm keys H + 400 storm keys probes) after=4800 (unchanged): P workers 0 orphan retries, ~0.01% rejects (mempool-full only), ~24.8k ready UTXOs each; included TPS limited by block mass (~98% full), not by addresses/UTXO chaining
+2026-09-25T22:42:18+0200 SAFETY limits RATE_MAX 60000->8000 (mempool hit 99.66k at 22:41; bursts overshoot the 3s taper). 23:00 break CANCELLED (killed break-2300.sh pid 78068) per user 22:41 plan
+2026-09-25T22:46:11+0200 HALT fleet for GROKBUILD-FUND-2 + FEE-2X + guard patch (supervisor pid 4100181; fees cum 16119.36 TKAS)
+2026-09-25T22:46:46+0200 PHASE3-DRAIN (fleet halted 22:46:14; probes running) - drain measured while funding
+2026-09-25T22:47:16+0200 GROKBUILD-FUND-2 sent 299,993.01 TKAS to kaspatest:qzzkwgjh...wtgzv in 1184 txs (148 per P0-P7, 84 P2SH inputs -> 1 output each, ~415-451 TKAS per output), fee 20.92 TKAS, 0 fails, all 1184 left mempool by 22:47. txids: logs/storm/grokbuild-fund-2.jsonl. Only RECEIVED into that wallet, never spent from it.
+2026-09-25T22:47:26+0200 PHASE4-MAX-START + FEE-2X + SAFETY-GUARDS: supervisor restarted pid 185380 (FEE_MULT_P=2.0 -> P workers and H at 200 sompi/g, was 1.2=120), limits='40000 60000 90000 9000' (LOW HIGH PANIC=90k hard brake RATE_MAX=9000), limits2='40000 60000 70000 50000' (taper 40k-60k, gate 70k/50k). nettps.sh restarted pid 185482. drain after 22:46:14 halt: 49.6k->2.7k in <10s, 0 by 22:46:29
+2026-09-25T22:48:33+0200 RECOVERY-1 CANCELLED by user before it took effect (pause duration 0 s; RATE_MAX never set to 0). Recovery measurement deferred until storm funds run out.
+2026-09-25T22:48:55+0200 RATE_MAX 9000->20000 (limits '40000 60000 90000 20000'); pre: net 7.7-10k TPS, blocks 99% compute-full, mp 38-53k, all 9 workers FEE_MULT=2.0
+2026-09-25T22:51:13+0200 PLAN-UNTIL-EMPTY funds: ~356k TKAS spendable in storm pools (P0-P7+H after 300k GROKBUILD-FUND-2; probe wallets ~55k separate). FEE-2X burn: before 2.0-2.4k TKAS/10min (120 sompi/g, ~6.3k TPS) -> after 4.9k TKAS/10min (200 sompi/g, ~8.4k TPS) = ~29.5k TKAS/h -> funds last ~12h (~11:00 CEST 26 Sep). disk: measured 7.9 GB/h (21:44-22:44 at ~6k TPS), ~11 GB/h expected at 8.4k TPS; 46 GB free - 8 GB floor = 38 GB -> DISK RUNS OUT FIRST at ~3.5-4.8h (~02:15-03:30 CEST 26 Sep), supervisor disk taper 9.5->8.4 GB then pauses (unless TN10 pruning frees space). n0 appdir 52.4 GB.
+2026-09-25T22:52:02+0200 SUMMARY interim findings/overload-30m-summary.md (+copy overload-10m-summary.md) for overload 21:48:41-22:46:14 (57.5 min)

@@ -1,0 +1,7 @@
+{"txid":"e6d1fbc8d5dc90e55b93f22878789f6e4035b1b677551a59d438b5db09da6e46","node":"n0","submit_ms_epoch":1790362237357,"left_mempool_ms":3751}
+{"txid":"24e75f9010b024162fe6e1a1ae23b5ebd9b8c74127651c32f3af92715e34c1c3","node":"n1","submit_ms_epoch":1790362237895,"left_mempool_ms":3214}
+{"txid":"fa339e30039441289569c141d2a09fc5331498c9bc0a546dca17f6133f7ae7dd","node":"n0","submit_ms_epoch":1790362238228,"left_mempool_ms":2882}
+{"txid":"da51d461c91706556386c1e1b8dcc83bb99b1203f0c77901c2e562e5bbf3b91b","node":"n1","submit_ms_epoch":1790362238581,"left_mempool_ms":2529}
+{"txid":"27e2dfef91c9342dc7299222215b6b00c334ceae1cb571c6d4f5a2d143ab11b2","node":"n0","submit_ms_epoch":1790362237605,"left_mempool_ms":5504}
+{"txid":"b1ad9328fdfe2f28f3d459e5cd614b536596538aacf9465776e6f1e7daba11de","node":"n1","submit_ms_epoch":1790362239040,"left_mempool_ms":4069}
+{"txid":"5d84c529bb5ff10efaf97b00f43dde9f2a47e6b52cc92fd3c473b91f9cce0b6a","node":"n0","submit_ms_epoch":1790362239706,"left_mempool_ms":4403}

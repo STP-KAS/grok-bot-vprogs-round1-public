@@ -1,0 +1,14 @@
+=== fresh data dirs ===
+=== start A (issuer, settlement-mode, key1) ===
+A pid=4066984 log=/workspace/vprogs-rc/examples/tn10-runtime/scripts/logA.txt
+=== poll A state for covenant_id + bootstrap_txid + deploy block (timeout 120s) ===
+FATAL: node A exited before bootstrap (see /workspace/vprogs-rc/examples/tn10-runtime/scripts/logA.txt):
+2026-09-25 21:30:25.485+02:00 [INFO ] connected to ws://127.0.0.1:17220
+2026-09-25 21:30:25.494+02:00 [INFO ] lane id=1458996300 subnetwork=56f6844c00000000000000000000000000000000 mode=Fresh
+2026-09-25 21:30:27.394+02:00 [INFO ] covenant deploy: lane holds no live entry at anchor <h>
+2026-09-25 21:30:27.394+02:00 [INFO ] settlement mode (dev): bootstrapping dev-pins covenant; issuer kaspatest:qq8uju6jdx039zxv9tcvtjnnmflg62wzfmlcgwtl594tucxpd058un5cdtsp6
+
+thread 'main' (4066984) panicked at l1/wallet/src/lib.rs:167:56:
+fetch spendable utxos: RpcSubsystem("Method unavailable. Run the node with the --utxoindex argument.")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+=== cleanup: terminating daemons ===

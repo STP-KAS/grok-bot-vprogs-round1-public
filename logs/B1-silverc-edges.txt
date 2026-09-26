@@ -1,0 +1,30 @@
+# 2026-09-25T20:21:31+02:00 silverc 3ed9733
+ctor floor=1 (desk) | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+ctor floor=0 | exit=0 | bytecode=7604b08239998763757682599f69757600a2697551676a68
+ctor floor=-1 | exit=0 | bytecode=7604b08239998763757682599f6975764fa2697551676a68
+ctor floor=16 | exit=0 | bytecode=7604b08239998763757682599f69757660a2697551676a68
+ctor floor=17 | exit=0 | bytecode=7604b08239998763757682599f6975760111a2697551676a68
+ctor floor=2^31 | exit=0 | bytecode=7604b08239998763757682599f697576050000008000a2697551676a68
+ctor floor=2^63-1 | exit=0 | bytecode=7604b08239998763757682599f69757608ffffffffffffff7fa2697551676a68
+ctor floor=-2^63 | exit=1 | compile error: script build error: Number exceeds 8 bytes: -9223372036854775808
+ctor floor=2^63 (overflow) | exit=1 | failed to parse constructor args /tmp/sil-case.args.json: invalid value: integer `9223372036854775808`, expected i64 at line 1 column 42
+ctor floor=1.5 (float) | exit=1 | failed to parse constructor args /tmp/sil-case.args.json: invalid type: floating point `1.5`, expected i64 at line 1 column 26
+ctor floor="7" (string) | exit=1 | failed to parse constructor args /tmp/sil-case.args.json: invalid type: string "7", expected i64 at line 1 column 26
+ctor kind=bool | exit=1 | compile error: unsupported feature: cannot convert artifact bool to int
+ctor missing | exit=1 | compile error: unsupported feature: constructor argument count mismatch: expected 1, got 0
+ctor extra arg | exit=1 | compile error: unsupported feature: constructor argument count mismatch: expected 1, got 2
+ctor not JSON | exit=1 | failed to parse constructor args /tmp/sil-case.args.json: expected ident at line 1 column 2
+pragma ^0.1.0 | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+pragma ^1.0.0 | exit=1 | compile error: unsupported feature: SilverScript compiler cannot support pragmas that cover future major versions because they may have breaking changes
+pragma ^0.2.0 | exit=1 | compile error: unsupported feature: SilverScript compiler version 0.1.0 does not satisfy pragma ^0.2.0
+pragma =0.1.0 | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+pragma >=0.1.0 | exit=1 | compile error: unsupported feature: SilverScript compiler cannot support pragmas that cover future major versions because they may have breaking changes
+pragma 0.1.0 (bare) | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+pragma ^0.0.1 | exit=1 | compile error: unsupported feature: SilverScript compiler version 0.1.0 does not satisfy pragma ^0.0.1
+pragma ^0.1 (short) | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+pragma garbage | exit=1 | compile error: unsupported feature: invalid SilverScript version requirement '^banana': unexpected character 'b' while parsing major version number
+pragma missing semicolon | exit=1 | compile error: parse error:  --> 4:5   | 4 |     }   |     ^---   |   = error: expected contract_definition     note: expected one of tokens: `/*`, `//`, WHITESPACE, `contract`
+no pragma | exit=0 | bytecode=7604b08239998763757682599f69757651a2697551676a68
+two pragmas | exit=1 | compile error: parse error:  --> 1:28   | 1 | pragma silverscript ^0.1.0;pragma silverscript ^0.1.0;contract DeskFloor(int floor) {   |                            ^---   |   = error: expected contract_definition     note
+require on undefined name | exit=1 | compile error: undefined identifier: m
+empty entry | exit=0 | bytecode=7604b08239998763757682599f69757551676a68

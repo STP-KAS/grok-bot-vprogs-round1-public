@@ -1,0 +1,35 @@
+# 2026-09-25T20:39:44+02:00 cli-debugger (silverscript v1.0.0) runs of DeskFloor.check, floor=1
+== n='0'
+   |
+
+Error: "FAIL"
+== n='1'
+PASS
+== n='2'
+PASS
+== n='-1'
+Usage: cli-debugger [OPTIONS] [SCRIPT_PATH]
+
+For more information, try '--help'.
+== n='9223372036854775807'
+PASS
+== n='9223372036854775808'
+Error: "invalid int '9223372036854775808': number too large to fit in target type"
+== n='abc'
+Error: "invalid int 'abc': invalid digit found in string"
+== n=''
+Error: "invalid int '': cannot parse integer from empty string"
+== n='-1' passed as --arg=-1
+
+Error: "FAIL"
+== n=0 full output
+error: script ran, but verification failed
+   --> 7:9
+   |
+ 6 |     entry check(int n) {
+ 7 |         require(n >= floor);
+   |         ^^^^^^^^^^^^^^^^^^^^ verification failed here
+   |   floor = 1, n = 0
+   |
+
+Error: "FAIL"

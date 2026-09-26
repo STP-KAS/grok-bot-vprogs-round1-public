@@ -1,0 +1,32 @@
+# --- kept from main (campaign runner) ---
+campaign/log.jsonl
+campaign/runner.out
+campaign/runner.err
+campaign/.phrase
+# --- secrets: never commit ---
+**/secure/
+*.key
+*.pem
+*mnemonic*
+*.phrase
+*seed*.json
+*wallet*.json
+state-*.json
+state-*.jsonl
+*.tmp
+.env
+.env.*
+# --- wallet/UTXO state and big data ---
+probe-state*.json
+probe-seed*.json
+storm-addresses.txt
+node_modules/
+__pycache__/
+target/
+*.log.gz
+logs/**/*.big.jsonl
+# big raw logs are summarised in logs/excerpts instead
+logs/monitor.jsonl
+logs/tps12h/supervisor.jsonl
+logs/tps12h/worker-*.jsonl
+logs/storm/api-listed-but-missing.jsonl

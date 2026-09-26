@@ -1,0 +1,9 @@
+{"t":"2026-09-25T18:21:55.126Z","step":"artifact","redeemHex":"7604b08239998763757682599f69757651a2697551676a68","tag":"b0823999","covAddr":"kaspatest:pqcu5qnq702krx9dk093m7fagg6lsngdu3fxkj9xpt83f0yk5kplzturwqh3f"}
+{"t":"2026-09-25T18:21:55.139Z","step":"fund covenant outputs","accepted":true,"txid":"05578b58e6148bfbf9fbdabfbf28b57e50ddaee2a93943a8ca5e9250b2861387","outputs":6,"eachSompi":"100000000"}
+{"t":"2026-09-25T18:21:55.143Z","case":"n=0 (below floor)","slot":0,"accepted":false,"error":"RPC Server (remote error) -> failed to verify the signature script: script ran, but verification failed"}
+{"t":"2026-09-25T18:21:55.150Z","case":"n=-1 (negative)","slot":0,"accepted":false,"error":"RPC Server (remote error) -> failed to verify the signature script: script ran, but verification failed"}
+{"t":"2026-09-25T18:21:55.154Z","case":"n=1 but wrong dispatch tag","slot":0,"accepted":false,"error":"RPC Server (remote error) -> failed to verify the signature script: script returned early"}
+{"t":"2026-09-25T18:21:55.155Z","case":"n as 9-byte number (over size check)","slot":0,"accepted":false,"error":"RPC Server (remote error) -> failed to verify the signature script: script ran, but verification failed"}
+{"t":"2026-09-25T18:21:55.156Z","case":"n=1 (at floor)","slot":0,"accepted":true,"txid":"8ad80caa71bb58d38ee90f0ac8d4b84b62b036001635c51966b3dfbde9f670f8"}
+{"t":"2026-09-25T18:21:55.157Z","case":"n=2^63-1 (huge)","slot":1,"accepted":true,"txid":"b691336f06d7aca42bf3fa763bc87c2bc407a5ad3b0fee47842041188b93849d"}
+{"t":"2026-09-25T18:21:55.158Z","case":"n=5 (above floor)","slot":2,"accepted":true,"txid":"b3663227e7a17c7d4969616583bc926acb6af790c7e32241874087d1f450ba9b"}

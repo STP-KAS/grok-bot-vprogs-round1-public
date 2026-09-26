@@ -1,0 +1,8 @@
+2026-09-25 21:12:44.699+02:00 [INFO ] Tx throughput stats: 4608.55 u-tps, 90.61% e-tps (in: 57148 via RPC, 43519 via P2P, out: 46115 via accepted blocks)
+2026-09-25 21:12:44.711+02:00 [INFO ] Mempool stats: 6564 transactions were evicted from the mempool in favor of incoming higher feerate transactions
+2026-09-25 21:12:45.677+02:00 [INFO ] Accepted 5 blocks ...e13d460a3fca406ddde8c738f6da1e49129f6bce6cebf47c89cda540932a3e2b, 4 via relay and 1 via submit block
+2026-09-25 21:12:47.061+02:00 [INFO ] Accepted 8 blocks ...c49d39508bc537e3df148592da3f89ab61b4dfedc50213a4a620b9c02a5b682b, 4 via relay and 4 via submit block
+2026-09-25 21:12:48.415+02:00 [INFO ] Accepted 7 blocks ...e1205f8c937ad5ee12e5a7864d27396f5d864006ecbf3f7ae8d96ff1bd39c497, 6 via relay and 1 via submit block
+2026-09-25 21:12:49.706+02:00 [INFO ] Accepted 4 blocks ...186e24419292016c76458f9472486dd80009ef9c3d2be1fa4dc852690e35d7bd, 3 via relay and 1 via submit block
+2026-09-25 21:12:50.259+02:00 [ERROR] thread 'tokio-runtime-worker' panicked at mining/src/mempool/validate_and_insert_transaction.rs:123:13: Transactions in mempool: 100001, max: 100000, mempool bytes size: 51400514, max: 100000000
+2026-09-25 21:12:50.977+02:00 [INFO ] Accepted 5 blocks ...744dbe49aa10bfafa6a6e7472d0e4e9220891accfea8e1474715fb912dbefefa via relay

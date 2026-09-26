@@ -1,0 +1,51 @@
+2026-09-25T20:12:20+02:00
+TAP version 13
+# Subtest: a state-neutral duplicate with a stale lane tip is skipped
+ok 1 - a state-neutral duplicate with a stale lane tip is skipped
+  ---
+  duration_ms: 1.208023
+  ...
+# Subtest: a state-neutral external advance is adopted
+ok 2 - a state-neutral external advance is adopted
+  ---
+  duration_ms: 0.148226
+  ...
+# Subtest: a bundle that already chains settles without the watch
+ok 3 - a bundle that already chains settles without the watch
+  ---
+  duration_ms: 0.167076
+  ...
+# Subtest: a competitor that already moved the state stays skipped
+ok 4 - a competitor that already moved the state stays skipped
+  ---
+  duration_ms: 0.117716
+  ...
+# Subtest: a reorg whose child is unknown stops
+ok 5 - a reorg whose child is unknown stops
+  ---
+  duration_ms: 1.104777
+  ...
+# Subtest: a parent with no metadata and a non-zero id is refused
+ok 6 - a parent with no metadata and a non-zero id is refused
+  ---
+  duration_ms: 0.138164
+  ...
+# Subtest: genesis stays a legal rollback
+ok 7 - genesis stays a legal rollback
+  ---
+  duration_ms: 0.200696
+  ...
+# Subtest: a parent that still has metadata is rolled to
+ok 8 - a parent that still has metadata is rolled to
+  ---
+  duration_ms: 0.169271
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 145.843765

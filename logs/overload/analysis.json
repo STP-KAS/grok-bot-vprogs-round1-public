@@ -1,0 +1,270 @@
+{
+ "phases": {
+  "P1-overload": {
+   "1": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 5.64,
+    "p90_s": 6.47,
+    "max_s": 6.668,
+    "mean_s": 5.1,
+    "fee_sompi": 169000,
+    "mass": 1690
+   },
+   "1.2": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 5.24,
+    "p90_s": 6.91,
+    "max_s": 7.302,
+    "mean_s": 4.85,
+    "fee_sompi": 202800,
+    "mass": 1690
+   },
+   "2": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 3.22,
+    "p90_s": 3.59,
+    "max_s": 3.648,
+    "mean_s": 3.08,
+    "fee_sompi": 338000,
+    "mass": 1690
+   },
+   "5": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.635,
+    "mean_s": 1.32,
+    "fee_sompi": 845000,
+    "mass": 1690
+   },
+   "10": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.636,
+    "mean_s": 1.32,
+    "fee_sompi": 1690000,
+    "mass": 1690
+   },
+   "100": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.635,
+    "mean_s": 1.32,
+    "fee_sompi": 16900000,
+    "mass": 1690
+   }
+  }
+ },
+ "p1_buckets_5min": {
+  "00-05min": {
+   "1": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 5.64,
+    "p90_s": 6.47,
+    "max_s": 6.668,
+    "mean_s": 5.1,
+    "fee_sompi": 169000,
+    "mass": 1690
+   },
+   "1.2": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 5.24,
+    "p90_s": 6.91,
+    "max_s": 7.302,
+    "mean_s": 4.85,
+    "fee_sompi": 202800,
+    "mass": 1690
+   },
+   "2": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 3.22,
+    "p90_s": 3.59,
+    "max_s": 3.648,
+    "mean_s": 3.08,
+    "fee_sompi": 338000,
+    "mass": 1690
+   },
+   "5": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.635,
+    "mean_s": 1.32,
+    "fee_sompi": 845000,
+    "mass": 1690
+   },
+   "10": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.636,
+    "mean_s": 1.32,
+    "fee_sompi": 1690000,
+    "mass": 1690
+   },
+   "100": {
+    "sent": 4,
+    "rejected": 0,
+    "reject_reasons": {},
+    "included": 4,
+    "evicted_never_included": 0,
+    "evicted_then_included": 0,
+    "pending": 0,
+    "pending_oldest_s": 0,
+    "p50_s": 1.34,
+    "p90_s": 1.58,
+    "max_s": 1.635,
+    "mean_s": 1.32,
+    "fee_sompi": 16900000,
+    "mass": 1690
+   }
+  }
+ },
+ "ramp_marks": {
+  "PHASE1-START": "21:45:18",
+  "PHASE1-RESTART": "21:46:47",
+  "PHASE1-START(clean)": "21:47:09",
+  "PHASE1-START(final)": "21:48:41"
+ },
+ "windows": {
+  "PHASE1-START": {
+   "minutes": 1.5,
+   "mempool_min": 55829,
+   "mempool_p50": 70797.0,
+   "mempool_max": 86528,
+   "net_tps_avg": 6136.5,
+   "net_tps_p10": 5363.98,
+   "net_tps_p90": 6973.3,
+   "storm_fee_tkas": 318.42,
+   "storm_fee_tkas_per_10min": 2146.65,
+   "curve": [
+    {
+     "from_min": 0,
+     "mp_min": 55829,
+     "mp_p50": 70797.0,
+     "mp_max": 86528,
+     "net_tps_avg": 6137.0
+    }
+   ]
+  },
+  "PHASE1-START(clean)": {
+   "minutes": 1.5,
+   "mempool_min": 43874,
+   "mempool_p50": 65216.0,
+   "mempool_max": 99234,
+   "net_tps_avg": 6046.3,
+   "net_tps_p10": 5443.08,
+   "net_tps_p90": 6522.24,
+   "storm_fee_tkas": 337.69,
+   "storm_fee_tkas_per_10min": 2202.33,
+   "curve": [
+    {
+     "from_min": 0,
+     "mp_min": 43874,
+     "mp_p50": 65216.0,
+     "mp_max": 99234,
+     "net_tps_avg": 6046.0
+    }
+   ]
+  },
+  "PHASE1-START(final)": {
+   "minutes": 1.6,
+   "mempool_min": 44635,
+   "mempool_p50": 61720.5,
+   "mempool_max": 86771,
+   "net_tps_avg": 6131.3,
+   "net_tps_p10": 5429.65,
+   "net_tps_p90": 6739.84,
+   "storm_fee_tkas": 372.51,
+   "storm_fee_tkas_per_10min": 2306.06,
+   "curve": [
+    {
+     "from_min": 0,
+     "mp_min": 44635,
+     "mp_p50": 61720.5,
+     "mp_max": 86771,
+     "net_tps_avg": 6131.0
+    }
+   ]
+  }
+ }
+}
