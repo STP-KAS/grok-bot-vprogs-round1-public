@@ -1,5 +1,7 @@
 # Overload interim read: first 30 min of full-throttle storm on n0 (TN10 only)
 
+> **Mainnet labels (added 4 Oct 2026).** Kaspa Testnet-10 only. Every statement about mainnet in this file now carries a label: **A** = shown on TN10, backed by our own measured data (TN10 only, never proof for mainnet); **B** = plausible for mainnet but unsure, reason given; **C** = unknown, needs more testing and review. Claims, evidence and the tests still needed: [TN10 storms: what they do and do not say about a mainnet storm](https://github.com/STP-KAS/tn10-storm-2026-10-public-report/blob/main/TN10-STORMS-MAINNET-IMPLICATIONS-2026-10-04.md).
+
 Written 22:20 CEST, 25 Sep 2026. Window: **21:48:41–22:18:41 CEST** (30 min). The overload continues until 23:00 CEST, followed by a 2-minute break and then maximum throttle again. The final summary goes in `overload-30m-summary.md`.
 
 ## Setup
@@ -51,4 +53,4 @@ Written 22:20 CEST, 25 Sep 2026. Window: **21:48:41–22:18:41 CEST** (30 min). 
 
 ## Fee burn estimate
 - **TN10 (measured):** about **2,400 TKAS per 10 min** of overload at ~6.3k included TPS (120 sompi/gram × ~600 mass per storm tx).
-- **Mainnet (ESTIMATE, not measured):** mainnet's default minimum relay feerate is 1 sompi/gram (100× lower than this TN10 node). The same tx volume at 1.2× the mainnet minimum would cost about **24 KAS per 10 min**. An attacker who had to match this test's 120 sompi/gram would pay about 2,400 KAS per 10 min. Either way, the same ~7k TPS block-capacity ceiling applies.
+- **Mainnet (ESTIMATE, not measured; corrected 4 Oct 2026):** ~~mainnet's default minimum relay feerate is 1 sompi/gram (100× lower than this TN10 node). The same tx volume at 1.2× the mainnet minimum would cost about **24 KAS per 10 min**.~~ **Corrected:** mainnet's minimum relay feerate has been 100 sompi/gram since rusty-kaspa PR #1004 (merged 15 May 2026), the same as this TN10 node, so the 120 sompi/gram case is the relevant one: about 2,400 KAS per 10 min (**B**: arithmetic; the volume is kaspad's "Processed" counter, which overstates unique transactions, so this is an upper bound). ~~Either way, the same ~7k TPS block-capacity ceiling applies.~~ The ~7k TPS figure is that same counter on TN10, not a measured mainnet capacity (**C** for mainnet).

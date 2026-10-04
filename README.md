@@ -4,6 +4,8 @@
 
 # TN10 full-load stress & break test + vprogs (25 Sep 2026)
 
+> **Mainnet labels (added 4 Oct 2026).** Kaspa Testnet-10 only. Every statement about mainnet in this file now carries a label: **A** = shown on TN10, backed by our own measured data (TN10 only, never proof for mainnet); **B** = plausible for mainnet but unsure, reason given; **C** = unknown, needs more testing and review. Claims, evidence and the tests still needed: [TN10 storms: what they do and do not say about a mainnet storm](https://github.com/STP-KAS/tn10-storm-2026-10-public-report/blob/main/TN10-STORMS-MAINNET-IMPLICATIONS-2026-10-04.md).
+
 > Clean public copy (history squashed) of a private working repo.
 >
 > **Copy of private repo `STP-KAS/grok-bot-vprogs` (history squashed for privacy).** Originally created **25 Sep 2026 20:54 CEST**, last updated **26 Sep 2026 07:51 CEST** (report branch `tn10-break-report`; the Windows campaign-runner branch last changed 25 Sep 2026 21:50 CEST, and its `campaign/` files are included here). The report covers the TN10 round-1 run of **25 Sep 2026, ~20:12 to 22:46 CEST** (round 2 continued to 26 Sep 06:31 CEST). The single commit here is dated 26 Sep 2026 only because history was squashed. Local user paths were replaced with `<user>` and email addresses were removed.
@@ -44,6 +46,8 @@ withdrawal, a bridge, a vprog settlement, a game move — can then sit there for
 point**: during our 57.5-min overload a 1× (minimum) fee waited ~7 s at the median and up to 105 s, while 10× got ≤3.7 s every time (section 6). Worse, if a node
 crashes or restarts during the overload, its waiting room is **lost** (F1, F2), and the dApp's transaction silently disappears.
 Testing this on TN10 now, with real node software, is much cheaper than discovering it on mainnet during a spike.
+
+**Mainnet labels for this section:** the queueing, fee-tier and lost-mempool results above are **A** on TN10 only (one node, `--ram-scale=0.1`, our own flood). That a mainnet spike would behave the same is **B**: same node code, but mainnet has far more nodes and miners we do not control. Whether a 10–30 minute mainnet overload can be reached at all is **C**: never tested.
 
 ## 3. How
 
@@ -163,8 +167,8 @@ Idle-node inclusion for reference: ~0.5–1 s (measured during the 22:46 halt).
 **Plain reading.** An hour of overload did not lose or refuse any normal transaction, and it did **not get worse over time** — latency
 tracks the mempool level (worst when it sits at the cap). But anyone paying the minimum or the spammer's fee waits ~7 s typically and
 **up to ~1.5–2 minutes**, and ~1 in 10 such transactions takes over 30 s. For a DEX, bridge or liquidation that is real harm. Paying
-**10× the minimum** gave ≤3.7 s every time; 100× bought nothing more. So on mainnet: dApps must bump fees dynamically during spikes, and
-node operators must not let nodes crash or restart at the cap (F1/F2), because that — not fees — is where transactions actually vanish.
+**10× the minimum** gave ≤3.7 s every time; 100× bought nothing more. So on mainnet, **if** blocks fill the same way (**B**: same mempool code, but never tested on mainnet; the TN10 result is **A**), dApps should bump fees dynamically during spikes, and
+node operators should not let nodes crash or restart at the cap (F1/F2), because on TN10 that — not fees — is where transactions actually vanished.
 Vprog moves under load were **skipped** (F7).
 
 ## 7. vprogs

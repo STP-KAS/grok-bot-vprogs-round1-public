@@ -1,5 +1,7 @@
 # F2 (HIGH): the mempool is not persisted — a restart or crash drops every pending transaction
 
+> **Mainnet labels (added 4 Oct 2026).** Kaspa Testnet-10 only. Every statement about mainnet in this file now carries a label: **A** = shown on TN10, backed by our own measured data (TN10 only, never proof for mainnet); **B** = plausible for mainnet but unsure, reason given; **C** = unknown, needs more testing and review. Claims, evidence and the tests still needed: [TN10 storms: what they do and do not say about a mainnet storm](https://github.com/STP-KAS/tn10-storm-2026-10-public-report/blob/main/TN10-STORMS-MAINNET-IMPLICATIONS-2026-10-04.md).
+
 **Severity:** High for dApps/operators during congestion (silent tx loss), Low for consensus.
 **Versions:** kaspad 2.1.0 (sha256 prefix `adf711b68abb2fab`), TN10, `--ram-scale=0.1`.
 
@@ -14,9 +16,9 @@
 ## Reproduction
 Fill a node's mempool (any load script in `scripts/`), `SIGINT` it (`scripts/restart-node.sh n1`), compare mempool size before/after.
 
-## Why it matters on mainnet
+## Why it may matter on mainnet (B)
 A 10–30 minute overload makes nodes the most likely to be restarted by operators (or to crash, F1) exactly when the pool is fullest.
-Pending dApp transactions are then lost without an error, and wallets that do not re-broadcast will show "pending" forever.
+Pending dApp transactions are then lost without an error, and wallets that do not re-broadcast will show "pending" forever. (Labels: the pool being dropped on restart is **A** on TN10, seen on our own nodes. That mainnet operators would restart or crash nodes at a full pool is **B**: plausible, but no mainnet overload was tested.)
 
 ## Suggested fix / mitigation
 - Optional on-shutdown mempool dump + on-start reload (with revalidation), like Bitcoin Core's `mempool.dat`.
